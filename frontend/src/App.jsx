@@ -19,21 +19,29 @@ function App() {
     };
 
     return (
-        <div style={{ textAlign: "center", marginTop: "50px" }}>
+        <div style={{
+            display: "flex", 
+            flexDirection: "column", 
+            alignItems: "center", 
+            justifyContent: "center", 
+            height: "100vh"
+        }}>
             <h2>Simple Addition App</h2>
             <input
                 type="number"
                 placeholder="Enter first number"
                 value={num1}
                 onChange={(e) => setNum1(e.target.value)}
+                style={{ margin: "10px", padding: "8px" }}
             />
             <input
                 type="number"
                 placeholder="Enter second number"
                 value={num2}
                 onChange={(e) => setNum2(e.target.value)}
+                style={{ margin: "10px", padding: "8px" }}
             />
-            <button onClick={handleAddition}>Add</button>
+            <button onClick={handleAddition} style={{ padding: "10px 20px", margin: "10px" }}>Add</button>
             {result !== null && <h3>Result: {result}</h3>}
         </div>
     );
