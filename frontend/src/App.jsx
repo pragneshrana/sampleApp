@@ -39,7 +39,7 @@ function App() {
                 placeholder="Enter second number"
                 value={num2}
                 onChange={(e) => setNum2(e.target.value)}
-                style={{ margin: "10px", padding: "8px" }}
+                style={{ margin: "10px", padding: "80px" }}
             />
             <button onClick={handleAddition} style={{ padding: "10px 20px", margin: "10px" }}>Add</button>
             {result !== null && <h3>Result: {result}</h3>}
